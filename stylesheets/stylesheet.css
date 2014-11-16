@@ -125,8 +125,12 @@ a:hover, a:focus {
   color: #000fdf;
 }
 
-footer a, footer a:hover, footer a:focus {
-  color: #F2F2F2;
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer a:hover, footer a:focus{
+  color: #007edf;
   text-decoration: underline;
 }
 
@@ -427,7 +431,7 @@ Full-Width Styles
 
 #faq_wrap {
   background: #292F34;
-  color: #fff;
+  color: #DDDDDD;
   border-top: 0px solid #111;
   border-bottom: 0px solid #111;
 }
@@ -435,6 +439,15 @@ Full-Width Styles
 #faq_content {
   padding-top: 40px;
 }
+#faq_content a:link,
+#faq_content a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+#faq_content a:hover { 
+ color: #007edf; 
+ text-decoration: none; 
+} 
 /*******************************************************************************
 Slideshow
 *******************************************************************************/
