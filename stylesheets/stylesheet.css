@@ -637,3 +637,9 @@ Small Device Styles
   }
 
 }
+
+/***Font Awesome Style****/
+.fa-lg {
+  padding: 10px 5px 15px 10px;
+  margin: auto auto;
+}
