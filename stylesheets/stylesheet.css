@@ -50,7 +50,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #292F34;
+  background: #3498db;
   font-size: 16px;
   font-family: 'Raleway', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -638,8 +638,3 @@ Small Device Styles
 
 }
 
-/***Font Awesome Style****/
-.fa-lg {
-  padding: 10px 5px 15px 10px;
-  margin: auto auto;
-}
