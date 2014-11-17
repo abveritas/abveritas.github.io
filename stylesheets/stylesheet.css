@@ -50,7 +50,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #2c3e50;
+  background: #292F34;
   font-size: 16px;
   font-family: 'Raleway', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -482,7 +482,7 @@ Slideshow
   position: absolute;
   font-family: "Lato";
   font-size: 1.2em;
-  bottom: .75em;
+  bottom: 25%;
   right: .35em;
   padding: .25em;
   color: #fff;
