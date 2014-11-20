@@ -1,0 +1,377 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+
+table { border-collapse:separate; border-spacing:0; }
+caption,th,td { text-align:left; font-weight:normal; }
+blockquote:before,blockquote:after,q:before,q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+/*
+	Page style
+*/
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 100% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753; 
+	background: #fff url(blossoms.jpg) no-repeat bottom right fixed; 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	font-size: 14px;
+	}
+/* specific divs */
+#container { 
+        font-family: 'Philosopher', georgia, sans-serif;
+	font-size: 90%;
+	background: url(zen-bg.jpg) no-repeat top left; 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+	
+#container_1 {
+	width:720px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+#container_2 {
+        float: right;
+	width:500px;
+	padding:10px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#container_h {
+        float: left;
+	width:300px;
+	min-height: 600px;
+	padding:40px 0 0 0;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+	font-weight:700;
+}
+#example {
+	width:600px;
+	height:390px;
+	position:relative;
+}
+#intro { 
+	min-width: 470px;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	background: transparent url(h1.gif) no-repeat top left; 
+	margin-top: 10px; 
+	width: 219px; 
+	height: 87px; 
+	float: left;
+	}
+#pageHeader h1 span {
+	display:none
+	}	
+#pageHeader h2 { 
+	background: transparent url(cor_reg_trot.jpg) no-repeat bottom right; 
+	margin-top: 58px; 
+	margin-bottom: 2px; 
+	width: 450px; 
+	height:338px; 
+	float: right;
+	}
+#pageHeader h2 span {
+	display:none
+	}
+#quickSummary {
+	clear:both; 
+	margin: 20px 20px 20px 10px; 
+	width: 360px; 
+	float: left;
+	}
+#quickSummary p {
+	font: italic 10pt/22pt georgia; 
+	text-align:center;
+	}
+#images p {
+	font: italic 10pt/22pt georgia; 
+	text-align:center;
+	}	
+#extraDiv1 {
+	background: transparent url(cor_reg_tr.jpg) bottom no-repeat; 
+	position: absolute; 
+	top: 60%; 
+	right: 175; 
+	width: 450px; 
+	height: 300px;
+	}	
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+#wrapper {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 0px solid #e5e5e5;
+	border-radius: 6px;
+	box-shadow: 2px 0 10px 0 rgba(0,0,0,0);
+	clear: both;
+	width:850px;
+	min-height: 650px;
+	line-height:1.5;
+	margin: 1px auto 1px auto;
+	padding: 20px 20px 20px 20px;
+	position: relative;
+}
+#wrapper_h {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 0px solid #e5e5e5;
+	border-radius: 6px;
+	box-shadow: 2px 0 20px 0 rgba(0,0,0,0.5);
+	clear: both;
+	width:510px;
+	height: 630px;
+	margin: 8px auto 1px auto;
+	padding: 10px 1px 1px 10px;
+	position: relative;
+}
+#wrapper2 {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 0px solid #e5e5e5;
+	border-radius: 6px;
+	box-shadow: 2px 0 20px 0 rgba(0,0,0,0.4);
+	clear: both;
+	width:730px;
+	height: 370px;
+	padding: 10px 1px 1px 10px;
+	position: relative;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:8px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../img/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Footer
+*/
+
+#footer {
+	text-align:left;
+	font: 90% 'Philosopher' georgia, sans-serif;
+	width:720px;
+	line-height:1.2;
+	margin-top:30px;
+	padding:1px 20px 18px;
+	border-top:0px solid #dfdfdf;
+}
+
+#footer p {
+	margin:4.5px 0;
+	font-size:1.0em;
+}
+
+/*
+	Anchors
+*/
+
+a:link { 
+	font: 90% georgia, sans-serif;
+	text-decoration: underline; 
+	color: #000000;
+	}
+a:visited { 
+	font: 80% georgia, sans-serif; 
+	text-decoration: underline; 
+	color: #333333;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+acronym {
+	border-bottom: none;
+	}
+/*
+        Menus
+*/
+div.menu5
+{
+    /*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
+    text-align:center;
+    font-size:0;
+    height: 20px;  
+    *position:relative;*top:1px;/*Hacks for IE6 & IE7 */  
+}
+
+div.menu5 a
+{
+    display: inline-block;
+    margin-right:1px; /* It specifies the distance between each tab */
+    background:#FFF 0 0;
+    padding-left:0px;
+    vertical-align:top;/*ChangeSet#1*/
+    text-decoration:none;
+}
+
+div.menu5 a span
+{
+    display: inline-block;
+    background:#FFF;
+    padding: 0 20px;
+    text-decoration:none;
+    font: bold 15px "Roboto Slab";
+    line-height: 20px;
+    color:#888888;
+    vertical-align:top;
+    border:1px solid #888888;
+    border-radius:8px 8px 8px 8px;
+}
+
+div.menu5 a:hover, div.menu5 a.current
+{
+    background:#FFF url(bg.gif) repeat-x 0 -20x;
+    line-height: 21px;
+}
+
+div.menu5 a:hover span, div.menu5 a.current span
+{
+    background:#EEE 100% -20px;
+    line-height: 21px;
+    color:#555753;
+}
+#sse2
+{
+    /*You can decorate the menu's container, such as adding background images through this block*/
+    background-color: #333;
+    height: 28px;
+    padding: 8px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#sses2
+{
+    margin:0 auto;/*This will make the menu center-aligned. Removing this line will make the menu align left.*/
+}
+#sses2 ul 
+{ 
+    position: relative;
+    list-style-type: none;
+    float:left;
+    padding:0;margin:0;
+}
+#sses2 li
+{
+    float:left;
+    list-style-type: none;
+    padding:0;margin:0;background-image:none;
+}
+/*CSS for background bubble*/
+#sses2 li.highlight
+{
+    border:solid 1px #999;
+    background-color:#999;
+    top:4px;
+    height:22px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    z-index: 1;
+    position: absolute;
+    overflow:hidden;
+}
+#sses2 li a
+{
+    height:20px;
+    padding-top: 6px;
+    margin: 0 20px;/*used to adjust the distance between each menu item. Now the distance is 20+20=40px.*/
+    color: #fff;
+    font: bold 15px "Roboto Slab";
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.video-link a {
+	background: #696969;
+	border-radius: 1%;
+	border: 0px solid #474747;
+	color: #fff;
+	display: block;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-size: 1.0rem;
+	text-decoration: none;
+	padding: 4px 40px;
+	float: left;
+	margin: 8px 0px 30px 290px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+}
+.video-link a:hover {
+	background-color: #333;
+	border: 0px solid #474747;
+	color: #fff;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	text-shadow: 0 -0px 0 #474747;
+}

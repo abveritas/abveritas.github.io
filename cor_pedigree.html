@@ -1,0 +1,265 @@
+<html>
+<head>
+
+<title>Corcovado pedigree pictures</title>
+<meta name="keywords" content="veritas farm, anke boersma, oswald, corcovado, imported horses,dressage training" />
+<meta name="description" content="Veritas Farm imports dutch warmbloods, has stallion services, dressage training" />
+<meta name="author" content="Anke Boersma" />
+<meta name="copyright" content="2005 by Veritas Farm" />
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+
+<style type="text/css" title="currentStyle" media="screen"> 
+		@import "zen.css";
+	</style> 
+  
+  <script language=javascript>
+window.onerror = null;
+var bName = navigator.appName;
+var bVer = parseInt(navigator.appVersion);
+var IE4 = (bName == "Microsoft Internet Explorer" && bVer >= 4);
+var menuActive = 0;
+var menuOn = 0;
+var onLayer;
+var timeOn = null;
+
+function showLayer(layerName,aa){
+var x =document.getElementById(aa);
+var tt =findPosX(x);	
+var ww =findPosY(x)+20; 
+
+if (timeOn != null) {
+clearTimeout(timeOn);
+hideLayer(onLayer);
+}
+if (IE4) {
+var layers = eval('document.all["'+layerName+'"].style');
+layers.left = tt;
+eval('document.all["'+layerName+'"].style.visibility="visible"');
+}
+else {
+if(document.getElementById){
+var elementRef = document.getElementById(layerName);
+if((elementRef.style)&& (elementRef.style.visibility!=null)){
+elementRef.style.visibility = 'visible';
+elementRef.style.left = tt;
+elementRef.style.top = ww;
+}
+}
+}
+onLayer = layerName
+}
+
+function hideLayer(layerName){
+if (menuActive == 0)
+{
+if (IE4){
+eval('document.all["'+layerName+'"].style.visibility="hidden"');
+} 
+else{
+if(document.getElementById){
+var elementRef = document.getElementById(layerName);
+if((elementRef.style)&& (elementRef.style.visibility!=null)){
+elementRef.style.visibility = 'hidden';
+}
+}
+}
+}
+}
+
+function btnTimer() {
+timeOn = setTimeout("btnOut()",600)
+}
+
+function btnOut(layerName){
+if (menuActive == 0){
+hideLayer(onLayer)
+}
+}
+
+var item;
+function menuOver(itemName,ocolor){
+item=itemName;
+itemName.style.backgroundColor = ocolor; //background color change on mouse over 
+clearTimeout(timeOn);
+menuActive = 1
+}
+
+function menuOut(itemName,ocolor){
+if(item)
+itemName.style.backgroundColor = ocolor;
+menuActive = 0
+timeOn = setTimeout("hideLayer(onLayer)", 100)
+}
+
+function findPosX(obj)
+{
+var curleft = 0;
+if (obj.offsetParent)
+{
+while (obj.offsetParent)
+{
+curleft += obj.offsetLeft
+obj = obj.offsetParent;
+}
+}
+else if (obj.x)
+curleft += obj.x;
+return curleft;
+}
+
+function findPosY(obj)
+{
+var curtop = 0;
+if (obj.offsetParent)
+{
+while (obj.offsetParent)
+{
+curtop += obj.offsetTop
+obj = obj.offsetParent;
+}
+}
+else if (obj.y)
+curtop += obj.y;
+return curtop;
+}
+
+</script>
+</head> 
+ 
+<body> 
+<div id="container"> 
+<font size="400%">Veritas Farm</font> 
+<table valign=top table summary="" cellpadding="2" border="3" width="900"  bordercolor="ffffff" align="center">
+<tr><td bgcolor=#000000>
+<table align=center class=tab><tr>
+<td id=0 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu0",'0') style="color: #ffffff"> <b>Home</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=1 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu1",'1') style="color: #ffffff"> <b>Corcovado</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=2 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu2",'2') style="color: #ffffff"> <b>Current Horses</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=3 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu3",'3') style="color: #ffffff"> <b>History</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=4 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu4",'4') style="color: #ffffff"> <b>Directions</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=5 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu5",'5') style="color: #ffffff"> <b>About</b></td>
+</tr></table>
+
+<div id=Menu0 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="index.html"> &nbsp;Home &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu1 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="corcovado.html"> &nbsp;Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="corcovadoimag.html"> &nbsp;Images Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="clips/corlarge.wmv"> &nbsp;Video Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="offspring_cor.html"> &nbsp;Offspring Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="cor_video.html"> &nbsp;YouTube video &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="charlieped.html"> &nbsp;Full Pedigree &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="cor_pedigree.html"> &nbsp;Pictures of Dam & Sire &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="contract10.pdf"> &nbsp;Contract &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu2 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="current.html"> &nbsp;Current Horses &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="currentped.html"> &nbsp;Pedigree &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu3 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="history.html"> &nbsp;History &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu4 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="directions.html"> &nbsp;Directions &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu5 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="about.html"> &nbsp;About &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+</td></tr></table>
+
+<div align="center">
+<font face="" size="+7">Corcovado</font>
+</div>
+<div id="images">
+<p><font face="Copperplate Gothic Light" size="2">
+1997 Holsteiner Stallion &nbsp;&nbsp;&#183;&nbsp;&nbsp;Coriander x K&#246;nigspark &nbsp;&nbsp;&#183; &nbsp;&nbsp;Stamm 474 A &#183; 16.3 hands &nbsp;&nbsp;&#183;&nbsp;&nbsp; Dark Bay</font></p>
+<blockquote><blockquote><p class="style1" align="left">
+<strong>Corcovado</strong> is the only approved son  in the US of the Elite Holsteiner stallion <strong>Coriander</strong> out of <strong>Caletta VII</strong>, a State Premium mare by K&#246;nigspark XX with the sought after stamm 474A.  <strong>Coriander</strong> was Dressage Horse of the Year in Schleswig-Holstein 1994 and a winner at Grand Prix level. <strong>Coriander</strong>  sired 5 approved sons in Holstein (Germany),  10 States-Premium Mares and the 2004 Second Reserve Champion at the Verband Mare Show in Elmshorn (Germany).
+<strong>Corcovado's</strong> sire, <strong>Coriander</strong> is probably best known and respected 
+    for producing the quietest minds in Holstein. He ranked as the leading sire 
+    of sport horses for all of Germany in his age group three years in a row. 
+    He produces elastic movers with deep and effective shoulders. <strong>Coriander</strong> is 
+    included in the elite list of stallions for his consistent production of stallion 
+    sons and approved daughters.</p>
+
+<p><img alt="corianderex (20K)" src="jpg/corianderex.jpg" height="245" width="327" /><img alt="corianderih (21K)" src="jpg/corianderih.jpg" height="240" width="327" /></p>
+<p><img alt="corianderhd (20K)" src="jpg/corianderhd.jpg" height="245" width="327" /><img alt="corianderpir (24K)" src="jpg/corianderpir.jpg" height="245" width="327" /></p>
+<p><img alt="corianderpi (21K)" src="jpg/corianderpi.jpg" height="245" width="327" /><img alt="corianderpi2 (22K)" src="jpg/corianderpi2.jpg" height="245" width="327" /></p>
+
+<p class="style1" align="left"><strong>Coriander's</strong> performance record (from German Holsteiner Verband):<br />
+HLP: Jumping talent: 8,0 Trot 8,0, Canter 9,0, Walk 9,0 <br />
+Off-spring results:<br />
+In Holstein 5 approved sons: <br />
+Coleman (now owned by Christine Stückelberger, CH), Calambo (HLP-Champion), Chagallo, Cameron and Corlino (Reserve-Champion, now owned by Margit Otto-Crepin) <br />
+One of his 10 States-Premium Mares is the 2004 Second Reserve Champion at the Verband Mare Show in Elmshorn,  
+Rose Noir v. Coriander- Cor de la Bryere- Capitol I. <br />
+2004: N-LGS 273.182 (106 horses, 5 succesfull in S-DRESSAGE and 6 in S-JUMPING) <br />
+Off-spring at the highest level:<br />
+Copacabana 12 v. Coriander -  <br />
+Calambo v. Coriander - Merano - Manitu (Alexandra Simons-de Ridder)<br />
+Coriano 2 v. Coriander - (Hans-Jörn Ottens) <br />
+Corway v. Coriander - (Jörg Kreutzmann)<br />
+Cordial v. Coriander -<br />
+Both parents were succesfull in Show-Jumping through the german S-Level<br />
+Breeding-index 	2004: Dr. 122 (95 %), Jump. 124 (94 %) </p> 
+
+<p class="style1" align="left">Corcovado's dam <strong>Caletta VII</strong>, by K&#246;nigspark xx is an impressive 
+    State Premium Mare who received the top score "9" for "type" at her mare    inspection. 
+    <strong>Caletta VII's</strong> dam is VALETTA, by Fernando - Landgraf I. Her sire, K&#246;nigspark 
+    xx is an important TB improvement sire, the sire of the approved stallion 
+    Kilian, and in Trakhener breeding, the sire of the stallion performance test 
+    winner Hertzruf. </p>
+<p><img alt="calettamed (26K)" src="jpg/calettamed.jpg" height="213" width="270"  align=""/></p>
+<p><strong><big>Additional pictures Sire Line:</big></strong></p>
+<p><img alt="Coriolan (17K)" src="jpg/Coriolan.jpg" height="196" width="250" />
+<img alt="calypso_II (14K)" src="jpg/calypso_II.jpg" height="194" width="220" />
+<img alt="cordelabryere2 (11K)" src="jpg/cordelabryere2.jpg" height="167" width="198" />
+<img alt="cordelabryere (8K)" src="jpg/cordelabryere.jpg" height="175" width="240" />
+<img alt="rantzaumed (13K)" src="jpg/rantzaumed.jpg" height="193" width="223" /></p>
+<p><strong><big>Additional pictures Dam Line:</big></strong></p>
+<p><img alt="konigsp.big (32K)" src="jpg/konigsp.big.jpg" height="216" width="244" />
+<img alt="fernando (11K)" src="jpg/fernando.jpg" height="195" width="260" />
+<img alt="nonne (13K)" src="jpg/nonne.jpg" height="217" width="241" />
+<img alt="landgraf_I (16K)" src="jpg/landgraf_I.jpg" height="167" width="216" /></p></blockquote></blockquote>
+<br />
+<br />
+<br />
+<br></div>
+
+</body>
+</html>

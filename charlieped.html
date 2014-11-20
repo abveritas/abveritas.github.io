@@ -1,0 +1,298 @@
+<html>
+<head>
+<title>Pedigree Corcovado</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!--Created for root directory index page 1/9/05--> 
+ <style type="text/css"><!-- body { background: #000000
+url(gif/cortrotincorner.gif) no-repeat center; color: 000000; }--></style>
+
+ <script language=javascript>
+window.onerror = null;
+var bName = navigator.appName;
+var bVer = parseInt(navigator.appVersion);
+var IE4 = (bName == "Microsoft Internet Explorer" && bVer >= 4);
+var menuActive = 0;
+var menuOn = 0;
+var onLayer;
+var timeOn = null;
+
+function showLayer(layerName,aa){
+var x =document.getElementById(aa);
+var tt =findPosX(x);	
+var ww =findPosY(x)+20; 
+
+if (timeOn != null) {
+clearTimeout(timeOn);
+hideLayer(onLayer);
+}
+if (IE4) {
+var layers = eval('document.all["'+layerName+'"].style');
+layers.left = tt;
+eval('document.all["'+layerName+'"].style.visibility="visible"');
+}
+else {
+if(document.getElementById){
+var elementRef = document.getElementById(layerName);
+if((elementRef.style)&& (elementRef.style.visibility!=null)){
+elementRef.style.visibility = 'visible';
+elementRef.style.left = tt;
+elementRef.style.top = ww;
+}
+}
+}
+onLayer = layerName
+}
+
+function hideLayer(layerName){
+if (menuActive == 0)
+{
+if (IE4){
+eval('document.all["'+layerName+'"].style.visibility="hidden"');
+} 
+else{
+if(document.getElementById){
+var elementRef = document.getElementById(layerName);
+if((elementRef.style)&& (elementRef.style.visibility!=null)){
+elementRef.style.visibility = 'hidden';
+}
+}
+}
+}
+}
+
+function btnTimer() {
+timeOn = setTimeout("btnOut()",600)
+}
+
+function btnOut(layerName){
+if (menuActive == 0){
+hideLayer(onLayer)
+}
+}
+
+var item;
+function menuOver(itemName,ocolor){
+item=itemName;
+itemName.style.backgroundColor = ocolor; //background color change on mouse over 
+clearTimeout(timeOn);
+menuActive = 1
+}
+
+function menuOut(itemName,ocolor){
+if(item)
+itemName.style.backgroundColor = ocolor;
+menuActive = 0
+timeOn = setTimeout("hideLayer(onLayer)", 100)
+}
+
+function findPosX(obj)
+{
+var curleft = 0;
+if (obj.offsetParent)
+{
+while (obj.offsetParent)
+{
+curleft += obj.offsetLeft
+obj = obj.offsetParent;
+}
+}
+else if (obj.x)
+curleft += obj.x;
+return curleft;
+}
+
+function findPosY(obj)
+{
+var curtop = 0;
+if (obj.offsetParent)
+{
+while (obj.offsetParent)
+{
+curtop += obj.offsetTop
+obj = obj.offsetParent;
+}
+}
+else if (obj.y)
+curtop += obj.y;
+return curtop;
+}
+
+</script>
+
+</head>
+
+<body>
+<table summary="" cellpadding="2" border="" width="900"  bordercolor="" align="center">
+<tr><td bgcolor=#000000>
+<table align=center class=tab><tr>
+<td id=0 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu0",'0') style="color: #ffffff"> <b>Home</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=1 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu1",'1') style="color: #ffffff"> <b>Corcovado</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=2 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu2",'2') style="color: #ffffff"> <b>Current Horses</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=3 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu3",'3') style="color: #ffffff"> <b>History</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=4 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu4",'4') style="color: #ffffff"> <b>Directions</b></td>
+<td style="color: #ffffff;"> &nbsp; || &nbsp; </td><td id=5 align=center onmouseout=btnTimer() onmouseover=showLayer("Menu5",'5') style="color: #ffffff"> <b>About</b></td>
+</tr></table>
+
+<div id=Menu0 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="index.html"> &nbsp;Home &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu1 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="corcovado.html"> &nbsp;Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="corcovadoimag.html"> &nbsp;Images Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="clips/corlarge.wmv"> &nbsp;Video Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="offspring_cor.html"> &nbsp;Offspring Corcovado &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="cor_video.html"> &nbsp;YouTube video &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="charlieped.html"> &nbsp;Full Pedigree &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="cor_pedigree.html"> &nbsp;Pictures of Dam & Sire &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="contract10.pdf"> &nbsp;Contract &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu2 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="current.html"> &nbsp;Current Horses &nbsp;</a> &nbsp; &nbsp;</td></tr>
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="currentped.html"> &nbsp;Pedigree &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu3 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="history.html"> &nbsp;History &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu4 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="directions.html"> &nbsp;Directions &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+<div id=Menu5 style="position: absolute; border: 1px solid #000000; visibility:hidden; z-ndex: 1">
+<table bgcolor=#ffffff cellspacing=0 cellpadding=0 style="border-collapse: collapse;">
+<tr height=25 onmouseout=menuOut(this,'#ffffff') onmouseover=menuOver(this,'#E8E8E8')>
+<td bgcolor=#000000>&nbsp; &nbsp;</td><td align=left>
+<a class=asd href="about.html"> &nbsp;About &nbsp;</a> &nbsp; &nbsp;</td></tr>
+</table></div>
+</td></tr></table>
+
+
+<div align="center"> 
+  
+  <table width="87%" border="1">
+    <tr> 
+      <td width="19%" height="13">&nbsp;</td>
+      <td width="17%" height="13">&nbsp;</td>
+      <td width="19%" height="13">&nbsp;</td>
+      <td width="19%" height="13">&nbsp;</td>
+      <td width="26%" height="13">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="19%" rowspan="2">Corcovado (HOL)</td>
+      <td width="17%" rowspan="2"> 
+        <p>Coriander (HOL)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Caletta VII (HOL)</p>
+      </td>
+      <td width="19%" height="130"> 
+        <p>Coriolan (HOL)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Primadonna (HOL)</p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="19%" height="130"> 
+        <p>Calypso II (HOL)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Inderin (HOL)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Constant (HOL)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Ilka 3 (HOL)</p>
+        <p>&nbsp;</p>
+        </td>
+      <td width="26%" height="130"> 
+        <p><font size="3">Cor de la Bryère (A.N)</font></p>
+        <p><font size="3">Tabelle (HOL)</font></p>
+        <p>&nbsp;</p>
+        <p><font size="3">Capitano (HOL) </font></p>
+        <p><font size="3">Ungarin (HOL)</font></p>
+        <p>&nbsp;</p>
+        <p><font size="3">Cor de la Bryère (A.N)</font></p>
+        <p>Ella (HOL) </p>
+        <p>&nbsp;</p>
+        <p>Fantus (HOL)</p>
+        <p>Cicilla (HOL)<font size="3"> </font></p>
+        <p>&nbsp;</p>
+        </td>
+    </tr>
+    <tr> 
+      <td width="19%"> 
+        <p>Königspark (XX)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p align="left">Valetta (HOL)</p>
+      </td>
+      <td width="19%" height="130"> 
+        <p>Prince Ippi (XX)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>KL.Ballerina (XX)</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Fernando (HOL)</p>
+        <p>&nbsp; </p>
+        <p>Nonne (HOL)</p>
+      </td>
+      <td width="26%" height="130"><font size="3">Imperial (XX)</font> 
+        <p><font size="3">Prinzess Addi (XX) </font></p>
+        <p>&nbsp;</p>
+        <p><font size="3">Ballymoss (XX) </font></p>
+        <p><font size="3">Koenigin Olga (XX)</font></p>
+        <p>&nbsp;</p>
+        <p><font size="3">Farnese (HOL)</font></p>
+        <p>Coconella (HOL)</p>
+        <p><font size="3">Landgraf I (HOL)</font></p>
+        <p>Zirza (HOL)<font size="3"> </font></p>
+      </td>
+    </tr>
+  </table>
+               
+ 
+</body>
+</html>
