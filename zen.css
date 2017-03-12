@@ -398,3 +398,31 @@ div.menu5 a:hover span, div.menu5 a.current span
 	-moz-transition: all .3s ease-in-out;
 	text-shadow: 0 -0px 0 #474747;
 }
+.video-link_home a {
+	background: #696969;
+	border-radius: 1%;
+	border: 0px solid #474747;
+	color: #fff;
+	display: block;
+	font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-size: 1.0rem;
+	text-decoration: none;
+	padding: 4px 40px;
+	float: left;
+	margin: 8px 0px 30px 50px;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+}
+.video-link_home a:hover {
+	background-color: #333;
+	border: 0px solid #474747;
+	color: #fff;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	text-shadow: 0 -0px 0 #474747;
+}
